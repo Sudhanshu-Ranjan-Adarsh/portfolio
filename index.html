@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="p-logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-list" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>An Obidient Student</p>
+                <h1>Hi! This is <br><span>Sudhanshu</span> Ranjan</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="dhan.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Us</h1>
+                    <p>I am a Diploma student in Computer Engineering with a medium academic foundation.
+                        I have a follow-up in performance securing 90% up to 4<sup>th</sup> semester. I have completed
+                        my 10<sup>th</sup> standard with a degrade of 75%, building core fundamentals early on. I 
+                        am driven by curiosity, non-technical growth and a passion for learning modern computing skills.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('hobby')">Hobby</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Practicing for web devlopment</li>
+                            <li><span>Reading</span><br>Passionate in reading books</li>
+                            <li><span>Problem Solving</span><br>Practicing to solve DSA-related problems</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobby">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Diploma in CSE</li>
+                            <li><span>2022</span><br>Cricket</li>
+                            <li><span>Early 2022</span><br>Passionate in reading books</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2026</span><br>Diploma in Computer Engg. from GP Sonipat</li>
+                            <li><span>2022 - 2023</span><br>Playing cricket in Academy-level matches</li>
+                            <li><span>2022</span><br>Completed 10<sup>th</sup> from CD Fort Public School</li>
+                            <li><span>2018 - 2022</span><br>Studying for Higher Section at RMPS Saidpur, Vishnupur</li>
+                            <li><span>Till 2018</span><br>At EPS Naokothi for UKG to 6<sup>th</sup></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Our Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Basic level of web designing and practicing for this by using only HTML, CSs and JavaScript.</p>
+                    <a href="#">Learn More!</a>
+                </div>
+                 <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX</h2>
+                    <p>Practicing a basic designing skills on Canva and Figma.</p>
+                    <a href="#">Learn More!</a>
+                </div>
+                 <div>
+                    <i class="fa-solid fa-book"></i>
+                    <h2>Subject Notes</h2>
+                    <p>We have a detailed and descripted notes for subjects like C, C++, Java and more.</p>
+                    <a href="#">Learn More!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Occasional Feed</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="phone2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Buzz</h3>
+                        <p>Some formal and informal follow on social media, but if it can't make any profit
+                            for us then it is gone deleted.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="phone1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Listening</h3>
+                        <p>Sometimes we also drove into music and listening songs is our hobby.
+                            So we made an app related to it.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="phone3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Online Shop</h3>
+                        <p>By means of online shopping, we can save our time and money both.
+                            So we made an app related to it.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More!</a>
+        </div>
+
+        <!-- contact -->
+         <div class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h2 class="sub-title">Contact Us</h2>
+                        <p><i class="fa-solid fa-paper-plane"></i>sudhanshu99964@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91 930-621-2530</p>
+                        <div class="social-icons">
+                            <a href="https://wa.me/919306212530"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://github.com/Sudhanshu-Ranjan-Adarsh"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://linkedin.com/Sudhanshu-Ranjan-Adarsh"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://youtube.com/Sudhanshu-Ranjan-Adarsh"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://x.com/Sudhanshu-Ranjan-Adarsh"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://figma.com/Sudhanshu-Ranjan-Adarsh"><i class="fa-brands fa-figma"></i></a>
+                        </div>
+                        <a href="cv.pdf" download class="btn btn2">Download Bio</a>
+                        <h4>Scan to look</h4>
+                        <img src="qr.png" class="qr">
+                    </div>
+                    <div class="contact-right">
+                        <h2 class="sub-title">Any Query</h2>
+                        <form action="">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <p>&copy; 2026 Sudhanshu <i class="fa-solid fa-heart"></i> Ranjan Adarsh. All rights reserved.</p>
+                <p>In collaboration <i class="fa-solid fa-users"></i> with Rishu, Ritesh and Adarsh <i class="fa-regular fa-face-kiss-wink-heart"></i></p>
+            </div>
+            <p class="thank-you">THANK YOU FOR VISITING MY PORTFOLIO!</p>
+         </div>
+
+
+
+
+
+
+    <!-- javascript for tabs -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
